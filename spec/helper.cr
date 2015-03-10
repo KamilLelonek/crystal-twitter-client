@@ -1,2 +1,3 @@
 require "spec"
-require "../src/twitter"
+require "../src/lib"
+require "./**"
