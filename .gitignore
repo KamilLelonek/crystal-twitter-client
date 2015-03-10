@@ -1,6 +1,6 @@
 # Executables
-twitter
-helper
+./twitter
+./helper
 
 # Build dir
 .crystal
