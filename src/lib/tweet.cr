@@ -2,7 +2,7 @@ require "json"
 
 module Twitter
   class Tweet
-    json_mapping({
+    JSON.mapping({
       created_at:              { type: Time, converter: TimeFormat.new("%a %b %d %T +0000 %Y") },
       favorited:               { type: Bool                                                    },
       retweeted:               { type: Bool                                                    },
@@ -11,7 +11,7 @@ module Twitter
       retweet_count:           { type: Int32                                                   },
       id:                      { type: Int64                                                   },
       lang:                    { type: String                                                  },
-      source:                  { type: String                                                  }
+      source:                  { type: String                                                  },
       text:                    { type: String                                                  },
       in_reply_to_screen_name: { type: String,        nilable: true                            },
       in_reply_to_status_id:   { type: Int32,         nilable: true                            },
